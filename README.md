@@ -6,13 +6,23 @@
 
 ```hcl
 module "my" {
-  source  = "git::git@github.com:thoughtgears/gcp-core-module.git//modules/labels?ref=latest"
+  source  = "git::git@github.com:thoughtgears/terraform-gcp-labels.git?ref=latest"
 
   custom = {
     label1 = "example"
   }
 }
 ```
+
+## What's in this repo
+
+This repo has the following folder structure:
+
+- [examples](https://github.com/thoughtgears/terraform-gcp-labels/examples): The example folder contains one or more examples of how to use the modules.
+
+- [root](https://github.com/thoughtgears/terraform-gcp-labels/blob/main): This root contains the module code.
+
+- [test](https://github.com/thoughtgears/terraform-gcp-labels/blob/main/test): Automated tests modules and examples.
 
 ## What's a Module?
 
